@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="https://static.openfoodfacts.org/images/logos/off-logo-favicon-light.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -2034,6 +2034,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../dev/explain-frontend-build-scripts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explain Frontend Build Scripts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../dev/explain-javascript-usage-and-strategy/" class="md-nav__link">
         
   
@@ -2320,33 +2348,6 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../explain-frontend-build-scripts/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Explain Frontend Build Scripts
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
     
@@ -2356,10 +2357,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -2377,8 +2378,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2570,13 +2571,13 @@
 <ul>
 <li><strong>FoodVisor Contributed (Python/MongoDB) backend:</strong> The FoodVisor startup contributed a few years ago <a href="https://github.com/openfoodfacts/openfoodfacts-apirestpython">a Python-based backend with a MongoDB export</a>, providing a solid starting point for caching in Python environments.</li>
 <li><strong>Project-Specific Caches:</strong> Several OFF projects like open-prices and robotoff have implemented local caches for their own needs. While not immediately reusable, they can serve as valuable references.</li>
-<li><strong>SDKs</strong> We have <a href="../api.md#sdks">a number of official SDKs</a> that can be leveraged as part of a caching backend. Please leverage and contribute to those 🙏</li>
+<li><strong>SDKs:</strong> We have <a href="../api.md#sdks">a number of official SDKs</a> that can be leveraged as part of a caching backend. Please leverage and contribute to those 🙏</li>
 <li><strong>You can start a project within Open Food Facts to solve this</strong></li>
 </ul>
 <h3 id="need-for-diverse-solutions">Need for Diverse Solutions<a class="headerlink" href="#need-for-diverse-solutions" title="Permanent link">#</a></h3>
 <p>We encourage developers who feel the need for very intensive operations not driven by user scans to create local caching solutions in various programming languages. These can be integrated into your own projects, and if well-designed, have the potential to become official OFF backends.</p>
 <h3 id="when-not-to-cache">When NOT to Cache<a class="headerlink" href="#when-not-to-cache" title="Permanent link">#</a></h3>
-<p>For applications primarily focused on user-generated requests, a local cache may not be necessary. The OFF API can handle such many such requests efficiently, and direct API usage contributes to valuable scan statistics for the project.</p>
+<p>For applications primarily focused on user-generated requests, a local cache may not be necessary. The OFF API can handle many such requests efficiently, and direct API usage contributes to valuable scan statistics for the project.</p>
 <h3 id="licensing-and-data-sharing">Licensing and Data Sharing<a class="headerlink" href="#licensing-and-data-sharing" title="Permanent link">#</a></h3>
 <p>Even when using a local cache, you're still bound by the Open Database License (ODbL). <strong>Do not mix OFF data with external product data</strong>. All additions or modifications made to OFF data must be shared back to OFF, preferably through the WRITE API. Consider incorporating this functionality into your cache implementation.
 For more on legal issues <a href="../license-be-on-the-legal-side/">please read this page</a></p>
